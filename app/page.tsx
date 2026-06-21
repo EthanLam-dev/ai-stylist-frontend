@@ -247,15 +247,23 @@ export default function Home() {
             <span className="font-semibold text-cyan-400 not-italic"> cell structure, heart pathology, lung structure.</span>"
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 w-full justify-end">
-            <Link href="/biology" className="group relative w-full sm:w-auto px-10 py-5 bg-white rounded-full text-slate-900 text-center font-bold tracking-widest hover:text-white transition-all duration-500 shadow-lg overflow-hidden">
+          <div className="flex flex-col sm:flex-row gap-4 w-full justify-end flex-wrap">
+            {/* 🧬 生物小教室入口 */}
+            <Link href="/biology" className="group relative w-full sm:w-auto px-8 py-5 bg-white rounded-full text-slate-900 text-center font-bold tracking-widest hover:text-white transition-all duration-500 shadow-lg overflow-hidden flex-grow sm:flex-grow-0">
               <span className="relative z-10">進入生物小教室</span>
               <div className="absolute inset-0 bg-cyan-500 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"></div>
             </Link>
             
-            <Link href="/collection-room" className="group relative w-full sm:w-auto px-10 py-5 bg-transparent border border-white/30 rounded-full text-white text-center font-bold tracking-widest hover:border-transparent transition-all duration-500 overflow-hidden">
+            {/* 📚 圖鑑/收藏室入口 (修正網址) */}
+            <Link href="/biology/collection-room" className="group relative w-full sm:w-auto px-8 py-5 bg-transparent border border-white/30 rounded-full text-white text-center font-bold tracking-widest hover:border-transparent transition-all duration-500 overflow-hidden flex-grow sm:flex-grow-0">
               <span className="relative z-10">大雄的收藏室</span>
               <div className="absolute inset-0 bg-slate-800 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"></div>
+            </Link>
+
+            {/* 👩‍🔬 AI 顧問入口 (新增的按鈕) */}
+            <Link href="/stylist" className="group relative w-full sm:w-auto px-8 py-5 bg-transparent border border-cyan-400/50 rounded-full text-cyan-400 text-center font-bold tracking-widest hover:text-white hover:border-transparent transition-all duration-500 shadow-[0_0_15px_rgba(34,211,238,0.2)] hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] overflow-hidden flex-grow sm:flex-grow-0">
+              <span className="relative z-10">AI 生物顧問</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"></div>
             </Link>
           </div>
 
