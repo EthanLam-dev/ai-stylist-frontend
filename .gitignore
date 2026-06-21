@@ -1,0 +1,14 @@
+# Next.js 垃圾與快取
+node_modules/
+.next/
+out/
+build/
+
+# 機密檔案
+.env
+.env.local
+.env.*.local
+
+# 跑錯棚的後端巨山
+venv/
+__pycache__/
