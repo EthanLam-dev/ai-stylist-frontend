@@ -30,7 +30,7 @@ export default function StylistChat() {
     setMessages(prev => [...prev, { role: 'ai', content: '✨ _正在翻閱生物資料庫，為你整理最清晰的解答..._' }]);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/chat", {  
+      const response = await fetch("https://bio-backend-dq32.onrender.com/api/chat", {  
         method: "POST",
         headers: {
           "Content-Type": "application/json",
